@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" x-undefined="" />
+        <title>ENPS Dashboard</title>
+        <link rel="stylesheet" href="/SiteAssets/Scripts/ENPS Survey and Report/Version 2/enps_dashboard.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+
+        <script type="module" src="/SiteAssets/Scripts/ENPS Survey and Report/Version 2/detractors_chart.js">
+        </script>
+
+        <!-- <script type="module" src="/SiteAssets/Scripts/ENPS Survey and Report/Version 2/enps_getalldata.js">
+        </script> -->
+
+    </head>
+
+    <body>
+        <h2 style="font-weight: 500; font-style: italic;">NPS Dashboard</h2>
+        <span style="position: relative; bottom: 21px; left: 150px; color: gray;">Net Promoter Score</span>
+        <div class="container">
+            <div class="column-one" id="app">
+                <h3 class="column-title">Detractors</h3>
+                <canvas id="detractors_chart"></canvas>
+            </div>
+            <div class="column-two">
+                <h3 class="column-title">Promoters</h3>
+                <canvas id="promoters_chart"></canvas>
+            </div>
+            <div class="column-three">
+                <h3 class="column-title">NPS Actual Score</h3>
+                <canvas id="nps_actual_score_chart"></canvas>
+            </div>
+            <div class="column-four">
+                <h3 class="column-title"><span>2019</span> NPS Recap</h3>
+                <!-- <canvas id="graphline" style="width: 1069px!important; height: 441px!important;"></canvas> -->
+
+                <section id="appa" class="section">
+                    <graph-Line v-if="loaded" :labels="labels" :detractors="detractors_value" :passives="passives_value"
+                        :promoters="promoters_value" type="line">
+                    </graph-Line>
+                    {{passives_value}}
+                </section>
+            </div>
+            <div class="column-five">
+                <h3 class="column-title">Survey Respondents</h3>
+                <canvas id=""></canvas>
+            </div>
+            <div class="column-six">
+                <h3 class="column-title">Total Respondents</h3>
+                <canvas id=""></canvas>
+            </div>
+        </div>
+        <!-- <section id="appa" class="section">
+            <h1 class="title is-1">
+                {{ message }}
+            </h1>
+            <graph-bar :labels="labels" :values="votes" type="bar">
+            </graph-bar>
+        </section> -->
+
+    </body>
+    <!-- <script type="module" src="/SiteAssets/Scripts/ENPS Survey and Report/Version 2/enps_getalldata.js"></script> -->
+
+</html>
