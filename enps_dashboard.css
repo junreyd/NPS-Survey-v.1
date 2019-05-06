@@ -1,0 +1,137 @@
+/* SharePoint Default */
+#pageTitle {
+    display: none;
+}
+
+.ms-webpart-zone.ms-fullWidth {
+    position: relative;
+    bottom: 52px;
+    border-radius: 0rem !important;
+    height: 1158px;
+}
+
+#scriptWPQ2 {
+    top: 852px;
+    position: relative;
+}
+
+#zz12_TopNavigationMenu {
+    width: 118.5% !important;
+    margin-top: -19px !important;
+    border-radius: 0;
+}
+
+#searchInputBox {
+    display: none;
+}
+
+#s4-ribbonrow {
+    display: none;
+}
+
+/* SharePoint Default */
+
+/* 3 box */
+.container {
+    position: relative;
+    width: 500px;
+    top: -3px;
+}
+
+.container div {
+    height: 275px;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.38);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.38);
+}
+
+.column-one {
+    width: 105%;
+    left: 9px;
+    position: absolute;
+}
+
+.column-two {
+    width: 105%;
+    margin-left: 112%;
+    position: absolute;
+}
+
+.column-three {
+    width: 105%;
+    left: 222%;
+    position: absolute;
+}
+
+.column-four {
+    width: 216%;
+    left: 8px;
+    position: absolute;
+    top: 299px;
+    height: 471px !important;
+}
+
+.column-five {
+    width: 105%;
+    left: 222%;
+    position: absolute;
+    top: 299px;
+    height: 280px !important;
+}
+
+.column-six {
+    width: 105%;
+    left: 222%;
+    position: absolute;
+    top: 602px;
+    height: 168px !important;
+}
+
+.column-title {
+    padding: 4px 8px;
+    font-size: 22px;
+    font-variant-caps: all-petite-caps;
+    font-weight: normal;
+}
+
+/* 3 box */
+
+/* gauge chart */
+
+#detractors_chart {
+    display: block;
+    width: 484px !important;
+    height: 234px !important;
+    position: relative;
+    left: 28px;
+    bottom: 8px;
+}
+
+#passive_chart {
+    display: block;
+    width: 484px !important;
+    height: 234px !important;
+    position: relative;
+    left: 28px;
+    bottom: 8px;
+}
+
+#promoters_chart {
+    display: block;
+    width: 484px !important;
+    height: 234px !important;
+    position: relative;
+    left: 28px;
+    bottom: 8px;
+}
+
+/* chart */
+
+#graphline {
+    width: 1069px !important;
+    height: 424px !important;
+    display: block;
+    position: relative;
+    top: 17px;
+    display: block;
+}
